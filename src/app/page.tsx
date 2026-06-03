@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import HeroScrollSequence from "@/components/HeroScrollSequence";
+import AnimatedFooter from "@/components/AnimatedFooter";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
@@ -128,8 +129,8 @@ export default function Home() {
       {/* 1. PINNED SCROLL SEQUENCE (HERO -> SIGNATURE) */}
       <HeroScrollSequence />
 
-      {/* spacer to allow scrolling past the pinned section */}
-      <div className="h-[200vh] w-full pointer-events-none" />
+      {/* 2. GRAND FINALE FOOTER */}
+      <AnimatedFooter />
     </main>
   );
 }
